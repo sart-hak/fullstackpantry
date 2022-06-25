@@ -1,0 +1,122 @@
+.HomeTechnologiesContainer {
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 700px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.HomeTechnologies {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.HomeTechnologies p {
+    color: #000000;
+}
+
+.HomeTechnologies h1 {
+    font-size: 28px;
+}
+
+.TechnologiesContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TechnologyCard {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    box-shadow: 0px 5px 25px #00000017;
+    border: 2px solid #DFDFDF;
+    padding: 25px;
+    margin: 20px;
+    border-radius: 10px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+}
+
+.TechnologyOverlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #164A9F;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    border-radius: 5px;
+    transition: .5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    
+}
+
+.TechnologyOverlay p{
+    opacity: 0;
+    transition: 0.5s 0.2s ease;
+    color: #FFFFFF;
+}
+
+.TechnologyCard:hover .TechnologyOverlay {
+    bottom: 0;
+    height: 100%;
+}
+
+.TechnologyCard:hover .TechnologyOverlay p{
+    opacity: 1;
+}
+
+.TechnologyCard img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.technologyRightBlob {
+    position: absolute;
+    z-index: -2;
+    right: -12%;
+    width: 45%;
+    bottom: -5%;
+    transform: rotate(-30deg);
+}
+
+.technologyLeftBlob {
+    position: absolute;
+    z-index: -2;
+    width: 39%;
+    bottom: -37%;
+    left: -10%;
+    transform: rotate(-185deg);
+}
+
+@media only screen and (max-width: 768px) {
+    .HomeTechnologiesContainer {
+        height: 1020px;
+    }
+
+    .TechnologiesContainer {
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .HomeTechnologiesContainer {
+        height: 1200px;
+    }
+
+    .TechnologiesContainer {
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,64 @@
+.HomePhotoContainer {
+    width: 100%;
+    height: 31.25rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.HomePhotoContainer::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-image: url('../images/home-photo.png');
+    filter: brightness(50%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -100;
+    top: 0;
+    left: 0;
+}
+
+.HomeContent {
+    width: 100%;
+    margin: auto;
+    color: #fff;
+    max-width: 1120px;
+    padding: 160px 20px;
+}
+
+.HomeContent h1 {
+    color: #FFFFFF;
+    font-size: 28px;
+}
+
+.HomeContent p {
+    line-height: 4;
+    color: #E2E2E2;
+}
+
+.homebtn {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.homebtn:hover {
+    /* all: unset; */
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+@media only screen and (max-width: 1020px) {
+    .HomeContent p {
+        line-height: normal;
+        margin-top: 20px;
+    }
+
+    .homebtn {
+        display: inline-block;
+        margin-top: 20px;
+    }
+}

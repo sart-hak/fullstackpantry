@@ -1,0 +1,111 @@
+.HomeCarouselContainer {
+    width: 100%;
+    text-align: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+
+}
+
+.HomeCarousel {
+    width: 100%;
+    height: 300px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.HomeCarousel p {
+    color: #000000;
+}
+
+.HomeCarousel h1 {
+    font-size: 28px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide div img {
+    display: block;
+    width: 12.5%;
+    height: 12.5%;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: auto;
+}
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    top: 35% !important;
+    color: #A1A1A1;
+}
+
+.caption {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.captionName {
+    margin: 20px 0 0 0;
+}
+
+.captionDesignation {
+    font-size: 0.5rem;
+}
+
+.captionContent {
+    margin: 10px 0;
+    color: #747474 !important;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 2%;
+}
+
+@media only screen and (max-width: 768px) {
+    .HomeCarousel {
+        height: 400px;
+    }
+
+    .captionContent {
+        padding: 0 10px;
+    }
+
+    .swiper-slide div img {
+        display: block;
+        width: 25%;
+        height: 25%;
+    }
+}

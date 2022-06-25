@@ -1,0 +1,439 @@
+.AboutCoverContainer {
+    position: relative;
+    height: 380px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.AboutCoverContainer::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/about-cover.png");
+    z-index: -100;
+    object-fit: cover;
+}
+
+.AboutCover {
+    max-width: 1120px;
+    width: 100%;
+    margin: auto;
+    padding: 115px 10px 0 10px;
+}
+
+.AboutCover p {
+    color: #D3D3D3;
+    line-height: 2;
+}
+
+.AboutCover h2 {
+    max-width: 800px;
+    color: white;
+}
+
+.AboutBoxContainer {
+    position: relative;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.AboutBox {
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1120px;
+    padding: 0 20px;
+    margin: auto;
+    align-items: center;
+}
+
+.AboutBoxLeft {
+    flex: 0.55;
+}
+
+.AboutBoxLeft h1 {
+    color: #164A9F;
+    font-size: 28px;
+}
+
+.AboutBoxLeft p {
+    color: #636363;
+}
+
+.AboutBoxRight p {
+    color: #636363;
+}
+
+.AboutBoxLeft p,
+.AboutBoxLeft h1 {
+    line-height: 2;
+}
+
+.AboutBoxRight {
+    flex: 0.35;
+}
+
+.AboutBox img {
+    width: 100%;
+}
+
+.AboutBoxBlob {
+    position: absolute;
+    z-index: -100;
+    right: -18%;
+    width: 50%;
+    bottom: -5%;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.AboutCarouselContainer {
+    height: 400px;
+    width: 100%;
+}
+
+.AboutCarousel {
+    height: 350px;
+    width: 100%;
+    max-width: 1120px;
+    padding: 0 20px;
+    margin: auto;
+    position: relative;
+}
+
+.AboutCarousel p {
+    color: #000000;
+}
+
+.carouselBox {
+    width: 100%;
+    padding: 0 !important;
+}
+
+.carouselBox h1 {
+    margin-bottom: 20px !important;
+    font-size: 28px;
+}
+
+.gwZiig {
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+}
+
+
+/* arrows */
+.geRExE {
+    height: 25px !important;
+    top: -50px !important;
+    width: 50px !important;
+}
+
+/* right arrow */
+.dFFQiB {
+    right: 0px !important;
+}
+
+.CarouselLeftBtn,
+.CarouselRightBtn {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: 2px solid #164A9F;
+    color: #164A9F;
+}
+
+.CarouselLeftBtn:hover,
+.CarouselRightBtn:hover {
+    color: #fff;
+    background-color: #164A9F;
+}
+
+/* left arrow */
+.kaHnvc {
+    left: unset !important;
+    right: 55px !important;
+}
+
+.carousalImage {
+    height: 225px !important;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.carousalImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.SuccessMain {
+    height: 800px;
+    background-color: #F9F9F9;
+}
+
+.SuccessTitle {
+    max-width: 1120px;
+    padding: 20px 20px;
+    width: 100%;
+    margin: auto;
+}
+
+.SuccessTitle p {
+    color: #000000;
+}
+
+.SuccessTitle h1 {
+    font-size: 28px;
+}
+
+.AboutSuccessContainer {
+    height: 650px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.AboutSuccess {
+    display: flex;
+    max-width: 1120px;
+    padding: 0 20px;
+    justify-content: space-between;
+    margin: auto;
+    height: 600px;
+    width: 100%;
+
+}
+
+.SuccessBox {
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+    padding: 32.5px;
+    box-shadow: 0px 20px 50px #0000000A;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 12px;
+    min-height: 200px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.SuccessLeft,
+.SuccessRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 45%;
+}
+
+.SuccessBox div:nth-child(1) {
+    flex: 0.1;
+    padding: 5px;
+}
+
+.SuccessBox div:nth-child(2) {
+    flex: 0.85;
+}
+
+.SuccessBox div:nth-child(2) p {
+    line-height: 1.5;
+    color: #8F8F8F;
+}
+
+@media only screen and (max-width: 1020px) {
+    .AboutBox {
+        height: 300px;
+    }
+
+    .AboutBoxLeft {
+        flex: 0.6 !important;
+    }
+
+    .AboutBoxLeft>p:nth-child(2) {
+        line-height: 1.2;
+    }
+
+    .AboutBoxRight img {
+        object-fit: cover;
+    }
+
+    .SuccessLeft,
+    .SuccessRight {
+        width: 48%;
+    }
+
+    .SuccessBox {
+        padding: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .AboutBox {
+        height: 250px;
+    }
+
+    .AboutBox h1 {
+        font-size: 24px !important;
+    }
+
+    .AboutBoxRight {
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .AboutBoxLeft,
+    .AboutBoxRight,
+    .AboutBoxRight img {
+        height: 100%;
+    }
+
+    .SuccessLeft,
+    .SuccessRight {
+        width: 48%;
+    }
+
+    .SuccessBox {
+        min-height: 210px;
+        padding: 20px;
+    }
+
+    .SuccessBox div:nth-child(2) p {
+        line-height: 1;
+    }
+
+    .SuccessBox div:nth-child(2) p {
+        margin-top: 10px;
+    }
+
+    .SuccessBox div h3 {
+        line-height: 1;
+    }
+}
+
+@media only screen and (max-width: 625px) {
+    .AboutCoverContainer {
+        text-align: center;
+    }
+
+    .AboutBoxContainer {
+        height: 600px;
+        text-align: center;
+    }
+
+    .AboutBox {
+        height: 480px;
+        flex-direction: column;
+    }
+
+    .AboutBoxLeft {
+        height: 250px;
+        flex: none;
+    }
+
+    .AboutBoxRight {
+        /* margin-top: 20px; */
+        height: 250px;
+        flex: none;
+        width: 100%;
+    }
+
+    .AboutBox h1 {
+        font-size: 24px !important;
+    }
+
+    .SuccessMain {
+        height: 1540px;
+        text-align: center;
+    }
+
+    .AboutSuccessContainer {
+        height: 1450px;
+    }
+
+    .AboutSuccess {
+        height: 1400px;
+        flex-direction: column;
+    }
+
+    .SuccessLeft,
+    .SuccessRight {
+        width: 100%;
+        justify-content: unset;
+    }
+
+    .SuccessBox div:nth-child(1) {
+        display: flex;
+        align-items: center;
+
+    }
+
+    .SuccessBox div:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    /* carousel */
+
+    .AboutCarouselContainer {
+        text-align: center;
+    }
+    
+    .kaHnvc {
+        right: 45px !important;
+    }
+
+    .geRExE {
+        height: 25px !important;
+        top: -76px !important;
+        width: 40px !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .AboutBox {
+        height: 530px;
+        flex-direction: column;
+    }
+}

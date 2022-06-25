@@ -1,0 +1,52 @@
+.HomeSolutionContainer {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.HomeSolution {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    color: white;
+    height: 160px;
+}
+
+.HomeSolution p {
+    color: #E2E2E2;
+}
+
+.HomeSolution h1 {
+    font-size: 26px;
+}
+
+.HomeSolutionContainer::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../images/home-solution.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -100;
+    top: 0;
+    left: 0;
+}
+
+.HomeSolution h1 {
+    line-height: 1.5;
+    color: #FFFFFF;
+}
+
+.HomeSolution p:nth-child(3) {
+    line-height: 3;
+}
+
+.HomeSolutionbtn {
+    padding: 10px 25px;
+    border: none;
+    background-color: #FFFFFF;
+}
